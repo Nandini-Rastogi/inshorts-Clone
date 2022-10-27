@@ -1,0 +1,38 @@
+import { useEffect, useState } from 'react';
+import { getNews } from '../service/api';
+import Article from './Article';
+import InfiniteScroll from 'react-infinite-scroll-component';
+
+const Articles = ()=> {
+    const [news, setNews] = useState([]);
+    const [page, setPage] = useState(0);
+
+    useEffect(() => {
+        const dailyNews = async () => {
+            const response = await getNews(page);
+            console.log(new Set([...news, ...response.data]));
+            setNews([...new Set([...news, ...response.data])]);
+        }
+        dailyNews();
+    }, [page])
+
+    useEffect(() => {
+        console.log(news);
+    }, [news])
+
+    return (
+
+        <InfiniteScroll
+        dataLength={news.length}
+        next={() => setPage(page => page + 1)}
+        hasMore={true}
+    >
+        {
+            news.map(data => {
+               return <Article data = {data} />
+            })
+        }
+    </InfiniteScroll>
+    )
+}
+export default Articles;
