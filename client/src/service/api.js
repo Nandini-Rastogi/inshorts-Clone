@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getNews = async () =>{
-    const URL = '';
+    const URL = 'https://inshortsclone1.onrender.com';
     try{
         return await axios.get(`${URL}/news`);
     }catch(error){
