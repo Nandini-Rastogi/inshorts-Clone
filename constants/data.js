@@ -1,13 +1,4 @@
 export const data = [
-     {
-        title: "Twitter is losing its most active users, show internal documents amid Musk's takeover",
-        author: ' Ridham Gambhir ',
-        description: "As Tesla CEO Elon Musk approached to close the acquisition, Twitter's internal documents revealed that it has been losing its most active users. The 'heavy tweeters' account for less than 10% of monthly overall users but generate 90% of all tweets and half of Twitter's global revenue, have been in 'absolute decline' since the pandemic began, the document said.",
-        url: 'https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2022/10_oct/26_wed/img_1666753390584_330.jpg?',
-        timestamp: '2022-10-26T07:54:25.000Z',
-        link: 'https://www.reuters.com/technology/exclusive-where-did-tweeters-go-twitter-is-losing-its-most-active-users-internal-2022-10-25/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts',
-        publisher: 'The Reuters'
-    },
     {
         title: "Twitter is losing its most active users, show internal documents amid Musk's takeover",
         author: ' Ridham Gambhir ',
